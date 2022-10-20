@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
+import Card from './Components/Card';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Card />
     </>
   );
 }
