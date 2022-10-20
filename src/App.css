@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
 img {
   display: unset;
+}
+
+/* Main Heading */
+.mainPageHeading {
+  padding: 48px 12px;
+}
+
+.mainPageHeading > h2 {
+  font-size: 1.75rem;
+  color: #15011d;
+  letter-spacing: 0.12px;
+  line-height: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  /* Main Heading */
+  .mainPageHeading {
+    padding: 3rem 4.9rem 3rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Main Heading */
+  .mainPageHeading {
+    padding: 3rem 13rem 3rem 3rem;
+  }
+
+  .mainPageHeading > h2 {
+    font-size: 2.24rem;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* Main Heading */
+  .mainPageHeading {
+    padding: 3rem 14rem 3rem 72px;
+  }
 }

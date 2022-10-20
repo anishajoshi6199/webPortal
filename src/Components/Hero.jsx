@@ -7,12 +7,6 @@ import './Hero/style.css';
 function Hero() {
   return (
     <>
-      <div className="mainPageHeading">
-        <h2>
-          Explore our latest thought leadership, ideas, and insights on the
-          issues that are shaping the future of business and society.
-        </h2>
-      </div>
       <div className="heroMain">
         <div className="hero">
           <img src={heroBack} className="heroImg" alt="" />
