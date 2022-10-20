@@ -2,6 +2,8 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Card from './Components/Card';
 import Discover from './Components/Discover';
+import Newsletter from './Components/Newsletter';
+import Footer from './Components/Footer';
 import './App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
       <Card />
       <Hero />
       <Discover />
+      <Newsletter />
+      <Footer />
     </>
   );
 }
