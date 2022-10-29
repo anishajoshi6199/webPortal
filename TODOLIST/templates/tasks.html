@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body  %}
+
+<div class="container" >
+    <form method="POST" action="/submit"> 
+        {% csrf_token %} 
+        <div class="container">
+            <div class="mb-0">
+                <label class="form-label">Enter your tasks</label>
+                <input type="text" class="form-control" id="task" name="task">
+            </div>
+            
+            <div class="mb-2">
+                <label for="exampleInputEmail1" class="form-label">Enter your date</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div>            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<div class="container m-3 mx-4">
+    <div class="col">
+        <ul class="list-group">
+            {% for todo_item in todo_items %}
+                <li class="list-group-item">{{todo_item.task}}
+                    <div class="float-right">      
+                        <a href="/delete_todo/{{todo_item.id}}/">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </a> 
+                        <a href="/editt_todo/{{todo_item.id}}/">
+                            <button type="button" class="btn btn-info">Edit</button>
+                        </a> 
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+    
+{% endblock body  %}
+    
+    
+    
+    
+    
